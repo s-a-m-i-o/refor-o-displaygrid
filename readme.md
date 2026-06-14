@@ -1,179 +1,91 @@
-# 📚 Módulo 1 — Fundamentos do CSS Grid
+# 📚 Reforço CSS Grid
 
-## O que é CSS Grid?
-
-CSS Grid é um sistema de layout bidimensional criado para organizar elementos em linhas e colunas ao mesmo tempo.
-
-Diferente do Flexbox, que trabalha principalmente em uma única direção (linha ou coluna), o Grid foi projetado para controlar os dois eixos simultaneamente.
+Repositório criado para registrar meus estudos de CSS Grid, praticando conceitos, exercícios e projetos durante a jornada de aprendizado.
 
 ---
 
-## display: grid
+## 🎯 Objetivo
 
-Para transformar um elemento em Grid, utilizamos:
-
-```css
-.container {
-    display: grid;
-}
-```
-
-Ao aplicar apenas `display: grid`, os elementos continuam empilhados verticalmente. O Grid só começa a criar colunas quando definimos sua estrutura.
+Aprender CSS Grid do básico ao avançado através de teoria, prática e desafios, construindo uma base sólida para criação de layouts modernos e responsivos.
 
 ---
 
-## grid-template-columns
-
-A propriedade `grid-template-columns` define quantas colunas existirão e qual será o tamanho de cada uma.
-
-Exemplo:
-
-```css
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-}
-```
-
-Resultado:
+## 📂 Estrutura do Projeto
 
 ```text
-[1][2][3]
+reforco-display-grid/
+│
+├── Modulo1-Fundamentos
+├── Modulo2-Grid-Container
+├── Modulo3-Grid-Itens
+├── Modulo4-Posicionamento
+├── Modulo5-Áreas
+├── Modulo6-Responsividade
+└── Modulo7-Projeto-Final
 ```
 
 ---
 
-## Posicionamento Automático (Auto Placement)
+## 🚀 Progresso
 
-Quando existem colunas disponíveis, o Grid distribui os elementos automaticamente.
+### ✅ Módulo 1 - Fundamentos
 
-Exemplo:
+Conceitos estudados:
 
-```css
-grid-template-columns: repeat(3, 200px);
-```
+* Diferença entre Flexbox e Grid
+* display: grid
+* grid-template-columns
+* Posicionamento automático (Auto Placement)
+* repeat()
+* Unidade fr
+* Proporções com fr
+* Mistura entre px e fr
 
-Com 5 elementos:
+Principais aprendizados:
 
-```text
-[1][2][3]
-[4][5]
-```
+* O Grid trabalha em duas dimensões (linhas e colunas).
+* O Grid distribui automaticamente os itens nas colunas disponíveis.
+* A unidade fr representa uma fração do espaço disponível.
+* Valores em px são resolvidos antes da distribuição das frações.
+* O Grid trabalha com proporções, não com tamanhos fixos.
 
-O Grid preenche as colunas da esquerda para a direita e cria novas linhas quando necessário.
-
----
-
-## repeat()
-
-A função `repeat()` evita repetição de código.
-
-Em vez de:
-
-```css
-grid-template-columns: 200px 200px 200px;
-```
-
-Podemos escrever:
-
-```css
-grid-template-columns: repeat(3, 200px);
-```
-
-Ambos produzem exatamente o mesmo resultado.
-
-Vantagens:
-
-* Código mais limpo
-* Melhor manutenção
-* Maior legibilidade
+Status: **Concluído ✅**
 
 ---
 
-## Unidade fr (Fraction)
+### ⏳ Módulo 2 - Grid Container
 
-A unidade `fr` representa uma fração do espaço disponível.
+Status: Em breve
 
-Exemplo:
+### ⏳ Módulo 3 - Grid Itens
 
-```css
-grid-template-columns: 1fr 1fr 1fr;
-```
+Status: Em breve
 
-O espaço será dividido igualmente entre as três colunas.
+### ⏳ Módulo 4 - Posicionamento
 
----
+Status: Em breve
 
-## Proporções com fr
+### ⏳ Módulo 5 - Áreas
 
-O Grid trabalha com proporções.
+Status: Em breve
 
-Exemplo:
+### ⏳ Módulo 6 - Responsividade
 
-```css
-grid-template-columns: 1fr 2fr 1fr;
-```
+Status: Em breve
 
-O espaço será dividido em 4 partes:
+### ⏳ Módulo 7 - Projeto Final
 
-```text
-1 + 2 + 1 = 4
-```
-
-Distribuição:
-
-```text
-1 parte | 2 partes | 1 parte
-```
-
-A segunda coluna ficará maior porque recebe duas frações.
+Status: Em breve
 
 ---
 
-## Misturando px e fr
+## 📝 Observações
 
-É possível combinar tamanhos fixos com tamanhos flexíveis.
+Cada módulo possui sua própria pasta contendo:
 
-Exemplo:
+* Exemplos práticos
+* Exercícios
+* Anotações
+* README específico do módulo
 
-```css
-grid-template-columns: 200px 1fr 1fr;
-```
-
-O Grid:
-
-1. Reserva os 200px da primeira coluna.
-2. Calcula o espaço restante.
-3. Divide o restante entre as colunas com `fr`.
-
-Regra mental:
-
-> Primeiro o Grid resolve os tamanhos fixos. Depois distribui o espaço restante entre as frações.
-
----
-
-## Conceitos Aprendidos
-
-✔ display: grid
-
-✔ grid-template-columns
-
-✔ posicionamento automático
-
-✔ repeat()
-
-✔ unidade fr
-
-✔ proporções com fr
-
-✔ mistura de px e fr
-
-✔ cálculo do espaço restante
-
----
-
-## Conclusão
-
-Neste módulo aprendemos a criar colunas utilizando CSS Grid, entender como o Grid posiciona elementos automaticamente e como distribuir espaço utilizando a unidade `fr`.
-
-Esses conceitos formam a base para todos os módulos seguintes.
+Ao final do curso será desenvolvido um projeto completo utilizando CSS Grid.
