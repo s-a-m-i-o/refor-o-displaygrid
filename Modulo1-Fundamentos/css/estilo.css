@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+.item {
+    border: solid 3px red;
+}
